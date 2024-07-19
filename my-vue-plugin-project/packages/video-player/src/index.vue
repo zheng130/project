@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-07-16 18:59:37
  * @LastEditors: v_zhengping v_zhengping@baidu.com
- * @LastEditTime: 2024-07-18 19:06:54
+ * @LastEditTime: 2024-07-19 10:52:42
  * @FilePath: /v2x-platform-front/src/views/info-publish/components/video-player-v1/index.vue
  * @Description: 视频播放器支持flv,m3u8,mp4等格式 
     文档 https://videojs.moyutime.cn/
@@ -18,7 +18,7 @@
 
 <script lang="ts">
 import {Component, Vue, Prop} from 'vue-property-decorator';
-import { VideoPlayerConfig } from '@/types/video-player';
+import { VideoPlayerConfig } from '~/types/video-player';
 @Component
 export default class VideoPlayer extends Vue {
     @Prop({required: true}) videoConfig!: VideoPlayerConfig;
@@ -91,7 +91,7 @@ export default class VideoPlayer extends Vue {
     mounted() {
         // 设置一个不会重复的id
         const sign = +new Date();
-        this.$refs.videoPlayer.id = `videoPlayer_${sign}`;
+        (this.$refs.videoPlayer as HTMLElement).id = `videoPlayer_${sign}`;
         this.videoId = `videoPlayer_${sign}`;
         this.initPlayer();
     }

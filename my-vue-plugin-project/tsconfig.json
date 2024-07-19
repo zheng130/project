@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "outDir": "dist",
     "declarationDir": "dist/types",
     "target": "esnext",
     "module": "esnext",
@@ -20,6 +19,9 @@
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "~/*": [
+        "packages/*"
       ]
     },
     "lib": [
