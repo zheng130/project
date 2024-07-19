@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-07-16 18:59:37
  * @LastEditors: v_zhengping v_zhengping@baidu.com
- * @LastEditTime: 2024-07-18 16:16:00
+ * @LastEditTime: 2024-07-18 19:06:54
  * @FilePath: /v2x-platform-front/src/views/info-publish/components/video-player-v1/index.vue
  * @Description: 视频播放器支持flv,m3u8,mp4等格式 
     文档 https://videojs.moyutime.cn/
@@ -18,9 +18,9 @@
 
 <script lang="ts">
 import {Component, Vue, Prop} from 'vue-property-decorator';
-import { VideoPlayerConfig } from './video';
+import { VideoPlayerConfig } from '@/types/video-player';
 @Component
-export default class VideoPlayerNew extends Vue {
+export default class VideoPlayer extends Vue {
     @Prop({required: true}) videoConfig!: VideoPlayerConfig;
     
     player = null;
