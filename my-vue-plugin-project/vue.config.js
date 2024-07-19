@@ -2,7 +2,7 @@
  * @Author: v_zhengping v_zhengping@baidu.com
  * @Date: 2024-07-18 17:30:40
  * @LastEditors: v_zhengping v_zhengping@baidu.com
- * @LastEditTime: 2024-07-19 09:42:45
+ * @LastEditTime: 2024-07-19 10:27:21
  * @FilePath: /my-vue-plugin-project/vue.config.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -12,13 +12,13 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 module.exports = {
-  pages: {
-    index: {
-      entry: "src/main.js",
-      template: "public/index.html",
-      filename: "index.html"
-    }
-  },
+  // pages: {
+  //   index: {
+  //     entry: "src/main.js",
+  //     template: "public/index.html",
+  //     filename: "index.html"
+  //   }
+  // },
   // 组件样式内联
   css: {
     extract: false,
@@ -44,5 +44,5 @@ module.exports = {
     //       });
     //   }
   },
-  parallel: false,
+  // parallel: false,
 };

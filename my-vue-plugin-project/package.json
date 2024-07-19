@@ -5,7 +5,7 @@
   "main": "dist/vuePlugins.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vuePlugins --dest dist packages/index.js",
+    "build": "vue-cli-service build --target lib --name vuePlugins --dest dist packages/index.ts",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
