@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "dist/types",
+    "declarationDir": "lib",
     "target": "esnext",
     "module": "esnext",
     "strict": false,
@@ -16,6 +16,7 @@
     "types": [
       "webpack-env"
     ],
+    "typeRoots": ["./node_modules/@types", "./packages/types"],
     "paths": {
       "@/*": [
         "src/*"
@@ -32,11 +33,7 @@
     ]
   },
   "include": [
-    "packages/types/**/*.d.ts",
-    "src/**/*.ts",
-    "src/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
+    "packages/types/**/*.d.ts"
   ],
   "exclude": [
     "node_modules"
