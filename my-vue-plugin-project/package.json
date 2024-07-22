@@ -1,15 +1,14 @@
 {
   "name": "my-vue-plugin-project",
-  "version": "0.1.8",
+  "version": "0.3.0",
   "private": false,
-  "main": "lib/vuePlugins.umd.min.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/vuePlugins.umd.js",
+  "types": "lib/types/index.d.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vuePlugins --dest lib packages/index.ts",
     "lint": "vue-cli-service lint"
   },
-  "files": ["lib"],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",

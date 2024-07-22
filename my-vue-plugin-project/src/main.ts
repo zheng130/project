@@ -2,14 +2,15 @@
  * @Author: v_zhengping v_zhengping@baidu.com
  * @Date: 2024-07-18 14:58:52
  * @LastEditors: v_zhengping v_zhengping@baidu.com
- * @LastEditTime: 2024-07-19 17:09:30
+ * @LastEditTime: 2024-07-22 10:23:21
  * @FilePath: /my-vue-plugin-project/src/main.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import VideoPlayer from '../packages/video-player/index'
+import VideoPlayer from '../packages/index'
+// import VideoPlayer from '../lib/vuePlugins.umd.js'
 
 Vue.config.productionTip = false
 Vue.use(VideoPlayer)

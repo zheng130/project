@@ -2,14 +2,17 @@
  * @Author: v_zhengping v_zhengping@baidu.com
  * @Date: 2024-07-18 17:38:10
  * @LastEditors: v_zhengping v_zhengping@baidu.com
- * @LastEditTime: 2024-07-19 10:33:14
+ * @LastEditTime: 2024-07-22 10:46:37
  * @FilePath: /my-vue-plugin-project/packages/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 import Vue from 'vue';
-import VideoPlayer from './video-player';
-
-// 存储组件列表
+import VideoPlayer from './video-player/src/index.vue';
+// 定义组件类型，确保每个组件都有 name 属性
+// interface ComponentWithName extends Vue {
+// 	name: string;
+//   }
+// // 存储组件列表
 const components = [
 	VideoPlayer
 ]
